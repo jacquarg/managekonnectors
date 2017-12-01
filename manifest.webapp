@@ -1,0 +1,36 @@
+{
+  "name": "Manage konnectors",
+  "slug": "managekonnectors",
+  "icon": "/icon.svg",
+  "description": "Update or install konnectors in your cozy account.",
+  "developer": {
+    "name": "Fing",
+    "url": "http://mesinfos.fing.org"
+  },
+  "default_locale": "fr",
+  "routes": {
+    "/": {
+    "folder": "/",
+    "index": "index.html",
+    "public": false
+    }
+  },
+  "version": "0.0.1",
+  "licence": "AGPL-3.0",
+  "permissions": {
+    "settings": {
+      "description": "Required by the cozy-bar to display Claudy and know which applications are coming soon",
+      "type": "io.cozy.settings",
+      "verbs": ["GET"]
+    },
+    "apps": {
+    "description": "Required by the cozy-bar to display the icons of the apps",
+    "type": "io.cozy.apps",
+    "verbs": ["GET"]
+    },
+    "konnectors": {
+      "description": "Required ??? to get the list of konnectors",
+      "type": "io.cozy.konnectors"
+    }
+  }
+}
