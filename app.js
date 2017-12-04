@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     token: app.dataset.cozyToken,
   })
 
-  cozyUsetracker()
-  .catch(err => console.warn('Error while initializing tracking.', err))
-  // .then(() => window.cozy.bar.init({ appName: 'Manage konnectors' }));
+
+  window.cozy.bar.init({ appName: 'Manage konnectors' })
 
 
   document.getElementById('update').onclick = () => {
